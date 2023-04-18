@@ -12,12 +12,21 @@ public class questao8 {
 		list.add("é");
 		list.add("o");
 		list.add("cara");
-		int x = list.size();
-		String tudo="";
-		for(int i =0 ; i<=x-1;i++) {
-			tudo += list.get(i);
-		}
+		
+		String tudo = frase(list);
 		System.out.println(tudo);
+		
+		
+		
 	}
-
+	public static String frase(ArrayList<String> list) {
+		String tudo="";
+		int x = list.size();
+		String tudo1="";
+		for(int i =0 ; i<=x-1;i++) {
+			tudo1 += list.get(i);
+		}
+		return tudo1;
+	}
+	
 }
